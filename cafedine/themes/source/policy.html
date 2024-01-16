@@ -1,0 +1,18 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+
+@@include('blocks/page-title.htm', {
+"title": "Privacy Policy",
+"description": "Contact Us"
+})
+@@include('blocks/policy.htm')
+
+
+@@if(version === 'free'){
+  @@include('blocks/buy-pro.htm')
+}
+<!--Footer start -->
+@@include('blocks/footer.htm')
+<!-- Footer  End -->
+
+@@include('footer.htm')

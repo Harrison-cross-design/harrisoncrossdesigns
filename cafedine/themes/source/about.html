@@ -1,0 +1,62 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+@@include('blocks/page-title.htm', {
+"title": "About us",
+"description": "Contact Us"
+})
+
+@@if(version === 'premium'){
+<section class="section about-section position-relative border-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-5 mb-lg-0 col-md-6">
+                <img src="images/about/about-img.jpg" alt="" class="img-fluid">
+
+            </div>
+
+            <div class="col-lg-4 mb-5 mb-lg-0 col-md-6">
+                <img src="images/about/about-2.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-lg-5">
+                <h2 class="mb-4">About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente necessitatibus id, animi nemo quos
+                    eos minus adipisci veritatis quibusdamm.</p>
+
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. repudiandae eius doloribus
+                    accusamus fugit .</p>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>- Clean Environment</h4>
+                    </li>
+
+                    <li>
+                        <h4>- Experience chefs</h4>
+                    </li>
+
+                    <li>
+                        <h4>- Fresh and creative dishes</h4>
+                    </li>
+                </ul>
+
+                <h3 class="booking">Book Now ! <br>+34567890</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/chefs.htm')
+@@include('blocks/cta-2.htm')
+@@include('blocks/service.htm')
+@@include('blocks/testimonial-2.htm')
+
+}
+
+@@if(version === 'free'){
+@@include('blocks/buy-pro.htm')
+}
+
+@@include('blocks/feed.htm')
+@@include('blocks/footer.htm')
+@@include('footer.htm')

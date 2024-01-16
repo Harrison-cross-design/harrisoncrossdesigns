@@ -1,0 +1,28 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+@@include('blocks/page-title.htm', {
+"title": "Confirmation",
+"description": "Contact Us"
+})
+@@if(version === 'premium'){
+<section class="section thank">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="font-lg mb-4"> <span class="text-primary">Thank you</span> <br>for your reservation</h2>
+                <p>Your order hasn’t shipped yet but we will send you an email when it does.</p>
+                <div class="mt-4">
+                  <a href="menu.html" class="btn btn-black mt-4">back to Shop</a>
+                  <a href="cart.html" class="btn btn-solid-border mt-4">track order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+}
+
+@@if(version === 'free'){
+    @@include('blocks/buy-pro.htm')
+  }
+@@include('blocks/footer.htm')
+@@include('footer.htm')

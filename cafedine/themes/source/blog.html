@@ -1,0 +1,31 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+@@include('blocks/page-title.htm', {
+"title": "Blog Posts",
+"description": "Contact Us"
+})
+
+
+<section class="section blog-post">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 pr-5">
+				<div class="row">
+					<div class="col-lg-12">
+						@@include('blocks/blog-posts.htm')
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				@@include('blocks/post-sidebar.htm')
+			</div>
+		</div>
+	</div>
+</section>
+@@if(version === 'free'){
+  @@include('blocks/buy-pro.htm')
+}
+
+@@include('blocks/footer.htm')
+@@include('footer.htm')

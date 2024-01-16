@@ -1,0 +1,39 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+<!--  Banner start -->
+@@include('blocks/slider.htm')
+<!--  Banner End -->
+
+<!--  Intro start -->
+@@include('blocks/banner-feature.htm')
+<!--  Intro End -->
+
+<!-- About start -->
+@@include('blocks/about.htm')
+<!-- About  End -->
+
+<!-- CTA start -->
+@@include('blocks/cta.htm')
+<!-- CTA  End -->
+
+<!-- DISHES start -->
+@@include('blocks/home-menu.htm')
+<!-- DISHES  End -->
+
+<!--App start -->
+@@include('blocks/app.htm')
+<!-- App  End -->
+
+@@if(version === 'free'){
+  @@include('blocks/buy-pro.htm')
+}
+
+@@include('blocks/feed.htm')
+
+<!--Footer start -->
+@@include('blocks/footer.htm')
+<!-- Footer  End -->
+
+@@include('footer.htm')
