@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Cross Designs - Contact</title>
+    <link rel="shortcut icon" href="image/faviconhcd.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="css/vendor/brands.css">
+    <link rel="stylesheet" href="css/vendor/regular.css">
+    <link rel="stylesheet" href="css/vendor/solid.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --dark-bg: #232323;
+            --secondary-dark: #282828;
+            --accent-color: #DEA90B;
+            --gray-color: #aaaaaa;
+            --font-1: 'Cormorant Garamond', serif;
+            --font-2: 'Quicksand', sans-serif;
+        }
+
+        /* General Styling */
+        body {
+            background-color: var(--dark-bg);
+            font-family: var(--font-2);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3.5rem; /* Adjust as needed */
+            font-family: var(--font-1);
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+
+        /* Form Styling */
+        .form {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            background-color: var(--secondary-dark);
+        }
+
+        .form-label {
+            color: var(--gray-color);
+            font-family: var(--font-2);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form input,
+        .form textarea,
+        .form select {
+            width: 100%;
+            padding: 0.7rem;
+            margin: 0.5rem 0;
+            background-color: transparent;
+            color: var(--accent-color);
+            border: none;
+            border-bottom: solid 1px var(--gray-color);
+            font-family: var(--font-2);
+            transition: border-color 0.3s;
+        }
+
+        .form input:focus,
+        .form textarea:focus,
+        .form select:focus {
+            outline: none;
+            border-bottom: solid 1px var(--accent-color);
+        }
+
+        .form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form button {
+            display: block;
+            width: 100%;
+            padding: 0.7rem;
+            margin-top: 1rem;
+            border: none;
+            background-color: var(--accent-color);
+            color: white;
+            font-family: var(--font-2);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form button:hover {
+            background-color: #b28400; /* Darker shade of accent color on hover */
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .form {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="bg-dark-color sticky-top">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="logo-container">
+                        <img src="image/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <button class="navbar-toggler border-0 accent-color" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-1 gap-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" role="button"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                                    <li><a class="dropdown-item" href="Ecommerce-Websites.html">Ecommerce Websites</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="Static-Websites.html">Static Websites</a></li>
+                                    <li><a class="dropdown-item" href="web-repair-and-updates.html">Web Repair & Updates</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="FAQ.html" role="button" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside" aria-expanded="false">
+                                    FAQ
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="FAQ-1.html">What service best meets my requirements?</a></li>
+                                    <li><a class="dropdown-item" href="FAQ-2.html">What amount can be deducted for tax purposes?</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a type="button" href="contact.html" class="font-2">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- End Of Header -->
+
+    <main>
+        <!-- Contact Section -->
+        <section class="position-relative" style="background-image: url(image/connect-1.jpeg);">
+            <div class="r-container">
+                <div class="image-overlay-2"></div>
+                <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative min-vh-65"
+                    style="z-index: 2;">
+                    <h1 class="text-white font-1">CONTACT US</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        
+        <form id="contactForm" class="form" action="https://submit-form.com/xL6b8q0hz" method="POST">
+            <input type="hidden" name="_redirect" value="https://harrisoncrossdesign.com">
+            
+            <!-- Your form fields -->
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="text" name="name" placeholder="business Name" required>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <select class="form-control" id="book-service" name="service" required>
+                            <option value="">Service</option>
+                            <option value="Ecommerce Website">Ecommerce Websites</option>
+                            <option value="Static Website">Static Websites</option>
+                            <option value="Website Repair & Updates">Website Repair & Updates</option>
+                            <option value="Other">Other</option>
+                        </select>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+                   
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="px-4">
+            <div class="r-container pt-5 pb-4 border-bottom border-secondary border-1 border-opacity-25 ">
+                <div class="row row-cols-1 row-cols-lg-2 w-100">
+                    <div class="col mb-4">
+                        <div
+                            class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start gap-4">
+                            <div style="max-width: 150px;">
+                                <img src="image/logo.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center align-items-lg-end align-items-center h-100 gap-4">
+                            <div class="d-flex flex-row gap-3 flex-wrap justify-content-center justify-content-lg-end">
+                                <a href="Terms-of-Service.html" class="text-gray font-2">Terms of Service</a>
+                                <a href="Privacy-Policy.html" class="text-gray font-2">Privacy Policy</a>
+                            </div>
+                            <div class="social mb-3">
+                                <div class="social-item">
+                                    <a href="https://au.linkedin.com/in/harrison-cross-11224b296" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="r-container py-4 px-4">
+                <div class="text-center">
+                    <span class="text-gray">Copyright 2023 © Harrison Cross Designs.</span>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+
+    <script src="https://formspark.io/js/sdk/formsubmit.min.js"></script>
+<script>
+    // Replace 'xL6b8q0hz' with your actual Formspark form ID
+    fs('xL6b8q0hz', {
+        onSuccess: function() {
+            // Show success message or redirect
+            alert('Form submitted successfully!');
+            document.getElementById('contactForm').reset(); // Reset form
+        },
+        onError: function() {
+            // Show error message
+            alert('Form submission failed!');
+        }
+    });
+</script>
+
+    
+</body>
+
+</html>
