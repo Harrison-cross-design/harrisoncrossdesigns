@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <style>
         /* CSS Variables */
         :root {
@@ -102,7 +102,8 @@
         }
 
         .form button:hover {
-            background-color: #b28400; /* Darker shade of accent color on hover */
+            background-color: #b28400;
+            /* Darker shade of accent color on hover */
         }
 
         /* Responsive Design */
@@ -114,14 +115,17 @@
     </style>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTRYWCQF12"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTRYWCQF12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-TTRYWCQF12');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TTRYWCQF12');
+    </script>
 </head>
 
 
@@ -134,9 +138,7 @@
                     <div class="logo-container">
                         <img src="image/logo.png" alt="" class="img-fluid">
                     </div>
-                    <button class="navbar-toggler border-0 accent-color" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler border-0 accent-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -148,8 +150,7 @@
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="services.html" role="button"
-                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     Services
                                 </a>
                                 <ul class="dropdown-menu">
@@ -161,8 +162,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="FAQ.html" role="button" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="FAQ.html" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     FAQ
                                 </a>
                                 <ul class="dropdown-menu">
@@ -190,8 +190,7 @@
         <section class="position-relative" style="background-image: url(image/connect-1.jpeg);">
             <div class="r-container">
                 <div class="image-overlay-2"></div>
-                <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative min-vh-65"
-                    style="z-index: 2;">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative min-vh-65" style="z-index: 2;">
                     <h1 class="text-white font-1">CONTACT US</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -202,10 +201,10 @@
                 </div>
             </div>
         </section>
-        
+
         <form id="contactForm" class="form" action="https://submit-form.com/xL6b8q0hz" method="POST">
             <input type="hidden" name="_redirect" value="https://harrisoncrossdesign.com/Thankyou.html">
-            
+
             <!-- Your form fields -->
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
@@ -221,12 +220,12 @@
                             <option value="Website Repair & Updates">Website Repair & Updates</option>
                             <option value="Other">Other</option>
                         </select>
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
         </form>
-        
-        
-                   
+
+
+
         </section>
     </main>
 
@@ -236,8 +235,7 @@
             <div class="r-container pt-5 pb-4 border-bottom border-secondary border-1 border-opacity-25 ">
                 <div class="row row-cols-1 row-cols-lg-2 w-100">
                     <div class="col mb-4">
-                        <div
-                            class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start gap-4">
+                        <div class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start gap-4">
                             <div style="max-width: 150px;">
                                 <img src="image/logo.png" alt="" class="img-fluid">
                             </div>
@@ -280,22 +278,22 @@
     <script src="js/submit-form.js"></script>
 
     <script src="https://formspark.io/js/sdk/formsubmit.min.js"></script>
-<script>
-    // Replace 'xL6b8q0hz' with your actual Formspark form ID
-    fs('xL6b8q0hz', {
-        onSuccess: function() {
-            // Show success message or redirect
-            alert('Form submitted successfully!');
-            document.getElementById('contactForm').reset(); // Reset form
-        },
-        onError: function() {
-            // Show error message
-            alert('Form submission failed!');
-        }
-    });
-</script>
+    <script>
+        // Replace 'xL6b8q0hz' with your actual Formspark form ID
+        fs('xL6b8q0hz', {
+            onSuccess: function() {
+                // Show success message or redirect
+                alert('Form submitted successfully!');
+                document.getElementById('contactForm').reset(); // Reset form
+            },
+            onError: function() {
+                // Show error message
+                alert('Form submission failed!');
+            }
+        });
+    </script>
 
-    
+
 </body>
 
 </html>
